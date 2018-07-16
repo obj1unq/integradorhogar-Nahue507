@@ -5,6 +5,8 @@ describe "Integrador" {
 
 //*********** OBJETOS PUNTO 1 *************
 
+//TODO: Usar valores por default
+
 //una persona de 37 años sin habilidades de cocina (para el ultimo punto del examen es Sencillo) 
 	var leo=new IntegranteSencillo(edad=37,sabeCocinar=false,habitacionActual=null,hogar=null)
 
@@ -61,6 +63,7 @@ describe "Integrador" {
 	
 	test "puede entrar habitaciones vacias" {
 		
+		//TODO: Usar assert.that/assert.notThat
 		assert.equals(true,comedor.puedeEntrar(leo))
 		assert.equals(true,dormitorioMatrimonial.puedeEntrar(leo))
 		assert.equals(true,banioPrincipal.puedeEntrar(leo))
